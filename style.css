@@ -22,8 +22,13 @@
 /*******************************************/
 
 body {
-
+text-align: center;
+  background-image: url('https://www.theschoolrun.com/sites/theschoolrun.com/files/weather_.jpg');
+  background-size: cover; 
+  background-position: center; 
 }
+
+
 
 
 /******************************************

@@ -1,10 +1,10 @@
 // Wait for the document to load
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Get the form element
     const form = document.getElementById('weatherForm');
 
     // Add an event listener for when the form is submitted
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
 
         // Get the values entered by the user
@@ -18,11 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Fetch the weather data
         fetch(apiUrl)
             .then(response => {
-                // Check if the response is okay
                 if (!response.ok) {
                     throw new Error('City not found');
                 }
-                return response.json(); // Parse the JSON response
+                return response.json();
             })
             .then(data => {
                 // Display the temperature and weather description
